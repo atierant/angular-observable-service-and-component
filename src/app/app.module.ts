@@ -5,13 +5,13 @@ import {AppComponent} from './app.component';
 import {ChildComponent} from './child/child.component';
 import {ObservableService} from 'src/app/service/observable.service';
 import {ObservableComponent} from './observable/observable.component';
+import { ContainingObservableComponent } from './containing-observable/containing-observable.component';
 
 
 @NgModule({
-  declarations: [AppComponent, ChildComponent, ObservableComponent],
+  declarations: [AppComponent, ChildComponent, ObservableComponent, ContainingObservableComponent],
   imports: [BrowserModule],
-  exports: [ChildComponent, ObservableComponent],
-  providers: [ObservableService, ObservableComponent],
+  providers: [ObservableService, ObservableComponent, ContainingObservableComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {

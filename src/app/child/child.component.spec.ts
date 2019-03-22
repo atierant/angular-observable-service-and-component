@@ -3,6 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { ChildComponent } from './child.component';
 import {ObservableService} from 'src/app/service/observable.service';
 import {ObservableComponent} from 'src/app/observable/observable.component';
+import {ContainingObservableComponent} from 'src/app/containing-observable/containing-observable.component';
 
 describe('ChildComponent', () => {
   let component: ChildComponent;
@@ -11,7 +12,7 @@ describe('ChildComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ ChildComponent ],
-      providers: [ObservableService, ObservableComponent]
+      providers: [ObservableService, ObservableComponent, ContainingObservableComponent]
     })
     .compileComponents();
   }));

@@ -5,13 +5,14 @@ import {ObservableComponent} from 'src/app/observable/observable.component';
 import {ChildComponent} from 'src/app/child/child.component';
 import {BrowserModule} from '@angular/platform-browser';
 import {NO_ERRORS_SCHEMA} from '@angular/core';
+import {ContainingObservableComponent} from 'src/app/containing-observable/containing-observable.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [BrowserModule],
       declarations: [AppComponent],
-      providers: [ObservableService, ObservableComponent],
+      providers: [ObservableService, ObservableComponent, ContainingObservableComponent],
       schemas: [
         NO_ERRORS_SCHEMA
       ]
