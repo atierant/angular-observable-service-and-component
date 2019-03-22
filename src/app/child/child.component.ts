@@ -10,10 +10,10 @@ import {ContainingObservableComponent} from 'src/app/containing-observable/conta
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent implements OnInit {
+  public content;
   private observableServiceSubscription: Subscription;
   private observableComponentSubscription: Subscription;
   private containingObservableComponentSubscription: Subscription;
-  private content;
 
   constructor(
     private observableService: ObservableService,
