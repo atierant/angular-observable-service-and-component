@@ -1,6 +1,6 @@
 # Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+[Demo](https://atierant.github.io/angular-observable-service-and-component/)
 
 ## Development server
 
@@ -18,7 +18,7 @@ to build the project into `dist/angular/`.
 Run `npx angular-cli-ghpages --repo=https://$GH_TOKEN@github.com/<your_name>/angular-observable-service-and-component.git --name="<your_name>" --email=<your_mail> --dir=dist/angular/`
 to publish to gh_pages (a new gh-pages branch is added to your project).  
 
-Then go to [https://<your_name>.github.io/angular-observable-service-and-component/]([])
+Then go to [https://<your_name>.github.io/angular-observable-service-and-component/](https://<your_name>.github.io/angular-observable-service-and-component/)
 
 ## Running unit tests
 
