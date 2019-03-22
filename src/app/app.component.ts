@@ -8,8 +8,6 @@ import {ObservableComponent} from 'src/app/observable/observable.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'angular';
-
 
   constructor(
     private observableService: ObservableService,

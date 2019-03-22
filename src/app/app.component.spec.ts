@@ -1,12 +1,20 @@
-import { TestBed, async } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import {async, TestBed} from '@angular/core/testing';
+import {AppComponent} from './app.component';
+import {ObservableService} from 'src/app/service/observable.service';
+import {ObservableComponent} from 'src/app/observable/observable.component';
+import {ChildComponent} from 'src/app/child/child.component';
+import {BrowserModule} from '@angular/platform-browser';
+import {NO_ERRORS_SCHEMA} from '@angular/core';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
+      imports: [BrowserModule],
+      declarations: [AppComponent],
+      providers: [ObservableService, ObservableComponent],
+      schemas: [
+        NO_ERRORS_SCHEMA
+      ]
     }).compileComponents();
   }));
 
@@ -16,16 +24,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('angular');
-  });
-
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to angular!');
+    expect(compiled.querySelector('h1').textContent).toContain('Test Observable Component/Service');
   });
 });
